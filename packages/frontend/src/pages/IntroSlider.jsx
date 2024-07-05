@@ -1,8 +1,9 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper/modules";
 import "swiper/swiper-bundle.css"; // Import Swiper styles
-import slide1 from "../assets/img/login.png";
+import slide1 from "../assets/img/home.jpg";
 import slide2 from "../assets/img/slide2.jpg";
 import slide3 from "../assets/img/slide3.jpg";
 import { Link } from "react-router-dom";
@@ -43,22 +44,23 @@ const IntroSlider = () => {
       ) : (
         <Swiper
           navigation={false} // Hide default navigation arrows
-          pagination={{ clickable: true }}
+          pagination={true}
           onSwiper={setSwiper}
+          modules={[Pagination]}
         >
           <SwiperSlide className="relative">
             <div className="absolute z-20 ml-[-4.4vw] md:ml-[-1vw] md:pt-[1vw] flex">
               <img src={opulent} className="w-[6rem] md:w-[8rem]" alt="" />
-              <h1 className="text-white pt-6 md:pt-8 font-bold text-[1.2rem] md:text-[1.7rem] md:ml-[16vw] lg:ml-[28vw] border-b border-[#FC2469] h-[3.6rem] md:h-[4.8rem]">
+              <h1 className="text-white pt-6 md:pt-8 font-bold text-[1.2rem] md:text-[1.7rem] ml-[4vw] md:ml-[16vw] lg:ml-[30vw] border-b border-[#FC2469] h-[3.6rem] md:h-[4.8rem]">
                 Opulent Signature Homes
               </h1>
             </div>
             <img
               src={slide1}
               alt="Slide 1"
-              className="w-full h-[100vh] object-cover md:object-fill"
+              className="w-full h-[100vh] object-cover"
             />
-            <div className="absolute inset-0 bg-black bg-opacity-0 flex flex-col justify-center items-center text-white">
+            <div className="absolute inset-0 bg-black bg-opacity-60 flex flex-col justify-center items-center text-white">
               <div className="slide-content text-center px-5 md:px-[8rem] lg:px-[16rem] md:mt-[-8vh]">
                 <h2 className="text-[1.4rem] md:text-[1.9rem] font-bold">
                   Your Gateway to Premium Real Estate
@@ -79,6 +81,12 @@ const IntroSlider = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="relative">
+            <div className="absolute z-20 ml-[-4.4vw] md:ml-[-1vw] md:pt-[1vw] flex">
+              <img src={opulent} className="w-[6rem] md:w-[8rem]" alt="" />
+              <h1 className="text-white pt-6 md:pt-8 font-bold text-[1.2rem] md:text-[1.7rem] ml-[4vw] md:ml-[16vw] lg:ml-[30vw] border-b border-[#FC2469] h-[3.6rem] md:h-[4.8rem]">
+                Opulent Signature Homes
+              </h1>
+            </div>
             <img
               src={slide2}
               alt="Slide 2"
@@ -106,13 +114,19 @@ const IntroSlider = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="relative">
+            <div className="absolute z-20 ml-[-4.4vw] md:ml-[-1vw] md:pt-[1vw] flex">
+              <img src={opulent} className="w-[6rem] md:w-[8rem]" alt="" />
+              <h1 className="text-white pt-6 md:pt-8 font-bold text-[1.2rem] md:text-[1.7rem] ml-[4vw] md:ml-[16vw] lg:ml-[30vw] border-b border-[#FC2469] h-[3.6rem] md:h-[4.8rem]">
+                Opulent Signature Homes
+              </h1>
+            </div>
             <img
               src={slide3}
               alt="Slide 3"
               className="w-full h-[100vh] object-contain"
             />
             <div className="absolute inset-0 bg-black bg-opacity-70 flex flex-col justify-center items-center text-white">
-              <div className="slide-content text-center md:px-[8rem] lg:px-[16rem] md:mt-[-8vh]">
+              <div className="slide-content text-center px-5 md:px-[8rem] lg:px-[16rem] md:mt-[-8vh]">
                 <h2 className="text-[1.4rem] md:text-[1.9rem] font-bold">
                   Let's Find Your Dream Home
                 </h2>

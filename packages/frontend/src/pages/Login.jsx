@@ -34,17 +34,17 @@ const Login = () => {
         </h1>
 
         {!isFormVisible ? (
-          <div className="mt-12 md:mt-16">
+          <div className="mt-12 md:mt-20">
             <Link to={"/home"}>
               <button
-                className="w-[80%] md:w-[40%] ml-[10%] py-2 mt-5 bg-[#FC2469] text-white font-semibold rounded transition hover:bg-[#cc255a]"
+                className="w-[80%] md:w-[40%] ml-[10%] md:ml-[30vw] py-2 md:py-4 lg:py-3 md:text-[1.2rem] mt-5 bg-[#FC2469] text-white font-semibold rounded transition hover:bg-[#cc255a] md:block"
                 type="submit"
               >
                 Guest Login
               </button>
             </Link>
             <button
-              className="w-[80%] md:w-[40%] ml-[10%] md:ml-[1.4rem] py-2 mt-5 bg-[#FC2469] text-white font-semibold rounded transition hover:bg-[#cc255a]"
+              className="w-[80%] md:w-[40%] ml-[10%] md:ml-[30vw] py-2 md:py-4 lg:py-3 md:text-[1.2rem] mt-5 bg-[#FC2469] text-white font-semibold rounded transition hover:bg-[#cc255a] md:block"
               type="submit"
               onClick={() => setIsFormVisible(true)}
             >
@@ -65,7 +65,7 @@ const Login = () => {
             viewport={{
               amount: "all",
             }}
-            className="p-6 max-[450px]:mt-[3.6rem] rounded-lg shadow-xl"
+            className="p-6 max-[450px]:mt-[3.6rem] lg:ml-[4.4rem] md:mt-8 rounded-lg shadow-xl"
           >
             <form>
               <input
@@ -73,23 +73,23 @@ const Login = () => {
                 name="email"
                 id="email"
                 placeholder="Email address"
-                className="border border-gray-400 py-2 px-4 w-full rounded mb-3"
+                className="border border-gray-100 bg-transparent placeholder:text-white py-2 px-4 w-full md:w-[60vw] rounded mb-3 md:ml-[18vw] lg:w-[40vw] lg:ml-[22vw]"
               />
               <input
                 type="password"
                 name="password"
                 id="password"
                 placeholder="Password"
-                className="border border-gray-400 py-2 px-4 w-full rounded mb-3"
+                className="border border-gray-100 bg-transparent placeholder:text-white py-2 px-4 w-full rounded mb-3 md:w-[60vw] md:ml-[18vw] lg:w-[40vw] lg:ml-[22vw]"
               />
-              <p className="mt-2 flex gap-2 ml-1">
+              <p className="mt-2 flex gap-2 ml-1 md:ml-[18vw] lg:ml-[22vw]">
                 Don't have an account?{" "}
                 <Link className="font-semibold text-[#FC2469]" to="/signup">
                   Sign up
                 </Link>
               </p>
               <button
-                className="w-[80%] ml-[10%] py-2 mt-5 bg-[#FC2469] text-white font-semibold rounded transition hover:bg-[#cc255a]"
+                className="w-[80%] md:w-[60vw] ml-[10%] md:ml-[18vw] py-2 mt-5 bg-[#FC2469] text-white font-semibold rounded transition hover:bg-[#cc255a] lg:w-[40vw] lg:ml-[22vw]"
                 type="submit"
               >
                 Submit

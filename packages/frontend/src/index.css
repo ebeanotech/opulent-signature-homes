@@ -1,12 +1,46 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
-    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-}
-
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.bree-serif-regular {
+  font-family: "Bree Serif", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  color: #fc2469;
+}
+
+.first-line {
+  width: 3rem;
+  height: 0.1rem;
+  background-color: #fc2469;
+  margin: 0 0 0.8rem 2rem;
+}
+
+.second-line {
+  width: 3rem;
+  height: 0.1rem;
+  background-color: #fc2469;
+  margin: 0 0 0.8rem 2rem;
+}
+
+.third-line {
+  width: 3rem;
+  height: 0.1rem;
+  background-color: #fc2469;
+  margin: 0 0 0 2rem;
+}
+
+.rotate {
+  transform: rotateY(70deg);
+}
+
+.hidden {
+  display: none;
+}
