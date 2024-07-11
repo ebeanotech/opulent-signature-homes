@@ -13,27 +13,27 @@
 }
 
 .dropdown:hover .dropbtn {
-  color: #fc2469;
+  color: rgb(37, 99, 235);
 }
 
 .first-line {
   width: 3rem;
   height: 0.1rem;
-  background-color: #fc2469;
+  background-color: rgb(37, 99, 235);
   margin: 0 0 0.8rem 2rem;
 }
 
 .second-line {
   width: 3rem;
   height: 0.1rem;
-  background-color: #fc2469;
+  background-color: rgb(37, 99, 235);
   margin: 0 0 0.8rem 2rem;
 }
 
 .third-line {
   width: 3rem;
   height: 0.1rem;
-  background-color: #fc2469;
+  background-color: rgb(37, 99, 235);
   margin: 0 0 0 2rem;
 }
 

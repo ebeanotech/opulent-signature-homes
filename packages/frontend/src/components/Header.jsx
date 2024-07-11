@@ -23,7 +23,7 @@ const Header = () => {
       >
         <div className="header-text md:pt-6 pt-[22vh]">
           <h1 className="lg:text-[1.5rem] font-semibold">
-            Welcome <span className="text-blue-600">User</span>
+            Welcome <span className="text-blue-600"></span>
           </h1>
           <h1 className="lg:text-[2.7rem] text-[1.5rem] mt-2 font-bold md:w-[28rem]">
             <Typewriter
@@ -56,7 +56,7 @@ const Header = () => {
               />
               <button
                 type="submit"
-                className="md:py-[1.1rem] bg-gray-900 py-[0.75rem] absolute md:ml-[-2.1rem] ml-[-2rem] text-white px-5 lg:px-8 rounded-3xl"
+                className="md:py-[1.1rem] bg-gray-900 hover:bg-blue-600 transition py-[0.75rem] absolute md:ml-[-2.1rem] ml-[-2rem] text-white px-5 lg:px-8 rounded-3xl"
               >
                 Get a Quote
               </button>

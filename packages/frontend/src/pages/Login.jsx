@@ -7,6 +7,10 @@ import { Link } from "react-router-dom";
 const Login = () => {
   const [isFormVisible, setIsFormVisible] = useState(false);
 
+  const reloadPage = () => {
+    window.location.reload();
+  };
+
   return (
     <motion.div
       initial={{
@@ -29,7 +33,15 @@ const Login = () => {
           className="w-[6rem] md:w-[8rem] absolute z-20 ml-[-2.4vw] md:ml-0"
           alt=""
         />
-        <h1 className="text-center text-[1.5rem] md:text-[1.8rem] font-bold pt-[18vh] md:pt-[27vh]">
+
+        <button
+          onClick={reloadPage}
+          className="ml-[80%] bg-blue-600 hover:bg-blue-800 py-1 px-2 rounded absolute lg:ml-[84%] mt-[4vh] md:mt-[6vh]"
+        >
+          Back
+        </button>
+
+        <h1 className="text-center text-[1.5rem] md:text-[1.8rem] font-bold pt-[22vh] md:pt-[18vh]">
           Login
         </h1>
 
@@ -37,14 +49,14 @@ const Login = () => {
           <div className="mt-12 md:mt-20">
             <Link to={"/home"}>
               <button
-                className="w-[80%] md:w-[40%] ml-[10%] md:ml-[30vw] py-2 md:py-4 lg:py-3 md:text-[1.2rem] mt-5 bg-[#FC2469] text-white font-semibold rounded transition hover:bg-[#cc255a] md:block"
+                className="w-[80%] md:w-[40%] ml-[10%] md:ml-[30vw] py-2 md:py-4 lg:py-3 md:text-[1.2rem] mt-5 bg-blue-600 text-white font-semibold rounded transition hover:bg-blue-800 md:block"
                 type="submit"
               >
                 Guest Login
               </button>
             </Link>
             <button
-              className="w-[80%] md:w-[40%] ml-[10%] md:ml-[30vw] py-2 md:py-4 lg:py-3 md:text-[1.2rem] mt-5 bg-[#FC2469] text-white font-semibold rounded transition hover:bg-[#cc255a] md:block"
+              className="w-[80%] md:w-[40%] ml-[10%] md:ml-[30vw] py-2 md:py-4 lg:py-3 md:text-[1.2rem] mt-5 bg-blue-600 text-white font-semibold rounded transition hover:bg-blue-800 md:block"
               type="submit"
               onClick={() => setIsFormVisible(true)}
             >
@@ -84,12 +96,12 @@ const Login = () => {
               />
               <p className="mt-2 flex gap-2 ml-1 md:ml-[18vw] lg:ml-[22vw]">
                 Don't have an account?{" "}
-                <Link className="font-semibold text-[#FC2469]" to="/signup">
+                <Link className="font-semibold text-blue-600" to="/signup">
                   Sign up
                 </Link>
               </p>
               <button
-                className="w-[80%] md:w-[60vw] ml-[10%] md:ml-[18vw] py-2 mt-5 bg-[#FC2469] text-white font-semibold rounded transition hover:bg-[#cc255a] lg:w-[40vw] lg:ml-[22vw]"
+                className="w-[80%] md:w-[60vw] ml-[10%] md:ml-[18vw] py-2 mt-5 bg-blue-600 text-white font-semibold rounded transition hover:bg-blue-800 lg:w-[40vw] lg:ml-[22vw]"
                 type="submit"
               >
                 Submit

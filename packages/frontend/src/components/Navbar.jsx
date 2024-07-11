@@ -32,7 +32,7 @@ const Navbar = () => {
   return (
     <div className="flex justify-between pr-[5rem] lg:pl-5 pl-2 py-[0.3rem] lg:py-[1rem] bg-gray-50 rounded-lg fixed top-0 lg:w-[96vw] w-[100vw] lg:ml-5 z-50">
       {/* Logo and Title */}
-      <div>
+      <div className="lg:z-50">
         <h1 className="text-[1.7rem] text-black max-[900px]:hidden font-bold">
           Opulent Signature Homes
         </h1>
@@ -56,12 +56,12 @@ const Navbar = () => {
       </div>
 
       {/* Navbar links */}
-      <ul className="hidden max-[900px]:h-[98vh] bg-white text-black max-[900px]:z-10 max-[900px]:p-[1rem] ml-[-0.25rem] lg:ml-0 max-[900px]:h-[58vh] max-[900px]:w-[98vw] lg:bg-transparent mt-[4.5rem] lg:mt-[0rem] navbar lg:flex gap-[3rem] pt-[0.5rem] max-[900px]:absolute">
+      <ul className="hidden max-[900px]:h-[98vh] bg-white text-black max-[900px]:z-20 max-[900px]:p-[1rem] ml-[-0.25rem] lg:ml-[35%] max-[900px]:w-[98vw] lg:bg-transparent mt-[4.5rem] lg:mt-[0rem] fixed navbar lg:flex gap-[3rem] pt-[0.5rem] max-[900px]:absolute">
         <span className="lg:flex gap-[3rem] bg-white lg:py-2 lg:px-6 lg:mt-[-0.6rem] lg:mr-[-1rem] lg:rounded-lg">
           <Link to={"/"}>
             <li className="lg:text-black text-black max-[900px]:mb-[0.6rem] max-[900px]:pt-2 max-[900px]:pb-3 border-b border-gray-700 lg:border-none">
               <a
-                className="no-underline hover:text-[#bd2354] lg:text-black text-black lg:hover:text-[#bd2354]"
+                className="no-underline hover:text-blue-600 lg:text-black text-black lg:hover:text-blue-600"
                 href="#home"
               >
                 Home
@@ -73,7 +73,7 @@ const Navbar = () => {
             <Link to={"/all-properties"}>
               <a
                 href="#properties"
-                className="no-underline hover:text-[#bd2354] lg:text-black text-black max-[900px]:pt-2 max-[900px]:pb-3 lg:hover:text-[#bd2354]"
+                className="no-underline hover:text-blue-600 text-black max-[900px]:pt-2 max-[900px]:pb-3"
               >
                 All Properties
               </a>
@@ -83,30 +83,30 @@ const Navbar = () => {
           {/* Dropdown menu for Categories */}
           <li className="max-[900px]:mb-[0.6rem] border-b border-gray-700 lg:border-none">
             <div className="dropdown relative inline-block">
-              <button className="dropbtn max-[900px]:text-black max-[900px]:pt-2 max-[900px]:pb-3 lg:text-black text-black lg:hover:text-[#bd2354] border-none">
+              <button className="dropbtn max-[900px]:text-black max-[900px]:pt-2 max-[900px]:pb-3 text-black lg:hover:text-blue-600 border-none">
                 Categories
               </button>
               <div className="dropdown-content hidden bg-[#f1f1f1] min-w-[160px] absolute z-[1] shadow-xl">
                 <a
-                  className="block no-underline p-[17px] text-[18px] hover:text-black hover:bg-[#bd2354]"
+                  className="block no-underline p-[17px] text-[18px] hover:text-white hover:bg-blue-600 text-black"
                   href="#home"
                 >
                   Link1
                 </a>
                 <a
-                  className="block no-underline p-[17px] text-[18px] hover:text-black hover:bg-[#bd2354]"
+                  className="block no-underline p-[17px] text-[18px] hover:text-white hover:bg-blue-600 text-black"
                   href="#home"
                 >
                   Link2
                 </a>
                 <a
-                  className="block no-underline p-[17px] text-[18px] hover:text-black hover:bg-[#bd2354]"
+                  className="block no-underline p-[17px] text-[18px] hover:text-white hover:bg-blue-600 text-black"
                   href="#home"
                 >
                   Link3
                 </a>
                 <a
-                  className="block no-underline p-[17px] text-[18px] hover:text-black hover:bg-[#bd2354]"
+                  className="block no-underline p-[17px] text-[18px] hover:text-white hover:bg-blue-600 text-black"
                   href="#home"
                 >
                   Link4
@@ -118,30 +118,30 @@ const Navbar = () => {
           {/* Dropdown menu for About Us */}
           <li className="max-[900px]:mb-[0.8rem] border-b border-gray-700 lg:border-none">
             <div className="dropdown relative inline-block">
-              <button className="dropbtn max-[900px]:text-black max-[900px]:pt-0 max-[900px]:pb-3 lg:text-black text-black border-none">
+              <button className="dropbtn max-[900px]:pt-0 max-[900px]:pb-3 text-black hover:text-blue-600 border-none">
                 About Us
               </button>
               <div className="dropdown-content hidden bg-[#f1f1f1] min-w-[160px] absolute z-[1] shadow-xl">
                 <a
-                  className="block no-underline p-[17px] text-[18px] hover:text-black hover:bg-[#bd2354]"
+                  className="block no-underline p-[17px] text-[18px] hover:text-white hover:bg-blue-600 text-black"
                   href="#home"
                 >
                   Link1
                 </a>
                 <a
-                  className="block no-underline p-[17px] text-[18px] hover:text-black hover:bg-[#bd2354]"
+                  className="block no-underline p-[17px] text-[18px] hover:text-white hover:bg-blue-600 text-black"
                   href="#home"
                 >
                   Link2
                 </a>
                 <a
-                  className="block no-underline p-[17px] text-[18px] hover:text-black hover:bg-[#bd2354]"
+                  className="block no-underline p-[17px] text-[18px] hover:text-white hover:bg-blue-600 text-black"
                   href="#home"
                 >
                   Link3
                 </a>
                 <a
-                  className="block no-underline p-[17px] text-[18px] hover:text-black hover:bg-[#bd2354]"
+                  className="block no-underline p-[17px] text-[18px] hover:text-white hover:bg-blue-600 text-black"
                   href="#home"
                 >
                   Link4
@@ -157,7 +157,7 @@ const Navbar = () => {
               <li className="max-[900px]:mb-[2rem]">
                 <Link to={"/login"}>
                   <a
-                    className="lg:bg-white bg-blue-500 text-white lg:text-black px-[1.5rem] py-[0.5rem] max-[900px]:pt-2 max-[900px]:pb-3  no-underline transition rounded hover:bg-[#bd2354]"
+                    className="lg:bg-white bg-blue-500 text-white lg:text-black px-[1.5rem] py-[0.5rem] max-[900px]:pt-2 max-[900px]:pb-3  no-underline transition rounded hover:bg-blue-600 hover:text-white"
                     href="#login"
                   >
                     Login
@@ -167,7 +167,7 @@ const Navbar = () => {
               <li>
                 <Link to={"/signup"}>
                   <a
-                    className="lg:bg-white bg-blue-500 text-white lg:text-black px-[1.5rem] py-[0.5rem] max-[900px]:pt-2 max-[900px]:pb-3  transition no-underline rounded hover:bg-[#bd2354]"
+                    className="lg:bg-white bg-blue-500 text-white lg:text-black px-[1.5rem] py-[0.5rem] max-[900px]:pt-2 max-[900px]:pb-3  transition no-underline rounded hover:bg-blue-600 hover:text-white"
                     href="#signup"
                   >
                     Register

@@ -51,7 +51,7 @@ const IntroSlider = () => {
           <SwiperSlide className="relative">
             <div className="absolute z-20 ml-[-4.4vw] md:ml-[-1vw] md:pt-[1vw] flex">
               <img src={opulent} className="w-[6rem] md:w-[8rem]" alt="" />
-              <h1 className="text-white pt-6 md:pt-8 font-bold text-[1.2rem] md:text-[1.7rem] ml-[4vw] md:ml-[16vw] lg:ml-[30vw] border-b border-[#FC2469] h-[3.6rem] md:h-[4.8rem]">
+              <h1 className="text-white pt-6 md:pt-8 font-bold text-[1.2rem] md:text-[1.7rem] max-[360px]:ml-[1.8vw] ml-[2vw] md:ml-[16vw] lg:ml-[28vw] border-b border-blue-600 h-[3.6rem] md:h-[4.8rem]">
                 Opulent Signature Homes
               </h1>
             </div>
@@ -71,7 +71,7 @@ const IntroSlider = () => {
                 </p>
                 <button
                   onClick={goToNextSlide}
-                  className="mt-11 px-8 md:px-[2.8rem] md:text-[1.4rem] py-3 md:py-2 bg-[#FC2469] text-white rounded-lg shadow-md hover:bg-[#bb2253] transition"
+                  className="mt-11 px-8 md:px-[2.8rem] md:text-[1.4rem] py-3 md:py-2 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-800 transition"
                 >
                   {swiper && swiper.activeIndex === totalSlides - 1
                     ? "Log In"
@@ -83,7 +83,7 @@ const IntroSlider = () => {
           <SwiperSlide className="relative">
             <div className="absolute z-20 ml-[-4.4vw] md:ml-[-1vw] md:pt-[1vw] flex">
               <img src={opulent} className="w-[6rem] md:w-[8rem]" alt="" />
-              <h1 className="text-white pt-6 md:pt-8 font-bold text-[1.2rem] md:text-[1.7rem] ml-[4vw] md:ml-[16vw] lg:ml-[30vw] border-b border-[#FC2469] h-[3.6rem] md:h-[4.8rem]">
+              <h1 className="text-white pt-6 md:pt-8 font-bold text-[1.2rem] md:text-[1.7rem] max-[360px]:ml-[1.8vw] ml-[2vw] md:ml-[16vw] lg:ml-[28vw] border-b border-blue-600 h-[3.6rem] md:h-[4.8rem]">
                 Opulent Signature Homes
               </h1>
             </div>
@@ -104,7 +104,7 @@ const IntroSlider = () => {
                 </p>
                 <button
                   onClick={goToNextSlide}
-                  className="mt-11 px-8 md:px-[2.8rem] md:text-[1.4rem] py-3 md:py-2 bg-[#FC2469] text-white rounded-lg shadow-md hover:bg-[#bb2253] transition"
+                  className="mt-11 px-8 md:px-[2.8rem] md:text-[1.4rem] py-3 md:py-2 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-800 transition"
                 >
                   {swiper && swiper.activeIndex === totalSlides - 1
                     ? "Log In"
@@ -116,7 +116,7 @@ const IntroSlider = () => {
           <SwiperSlide className="relative">
             <div className="absolute z-20 ml-[-4.4vw] md:ml-[-1vw] md:pt-[1vw] flex">
               <img src={opulent} className="w-[6rem] md:w-[8rem]" alt="" />
-              <h1 className="text-white pt-6 md:pt-8 font-bold text-[1.2rem] md:text-[1.7rem] ml-[4vw] md:ml-[16vw] lg:ml-[30vw] border-b border-[#FC2469] h-[3.6rem] md:h-[4.8rem]">
+              <h1 className="text-white pt-6 md:pt-8 font-bold text-[1.2rem] md:text-[1.7rem] max-[360px]:ml-[1.8vw] ml-[2vw] md:ml-[16vw] lg:ml-[28vw] border-b border-blue-600 h-[3.6rem] md:h-[4.8rem]">
                 Opulent Signature Homes
               </h1>
             </div>
@@ -137,7 +137,7 @@ const IntroSlider = () => {
                 <Link to={"/login"}>
                   <button
                     onClick={setSliderShown}
-                    className="mt-11 px-8 md:px-[2.8rem] md:text-[1.4rem] py-3 md:py-2 bg-[#FC2469] text-white rounded-lg shadow-md hover:bg-[#bb2253] transition"
+                    className="mt-11 px-8 md:px-[2.8rem] md:text-[1.4rem] py-3 md:py-2 bg-blue-600 text-white rounded-lg shadow-md hover:bg-blue-800 transition"
                   >
                     Log In
                   </button>

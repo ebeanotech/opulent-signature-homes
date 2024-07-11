@@ -24,10 +24,15 @@ const Signup = () => {
       <div className="text-white relative">
         <img
           src={opulent}
-          className="w-[6rem] absolute z-20 ml-[-2.4vw]"
+          className="w-[6rem] absolute z-20 ml-[-2.4vw] lg:ml-0"
           alt=""
         />
-        <h1 className="text-center text-[1.5rem] font-bold pt-[15vh] lg:pt-[11vh]">
+        <Link to={"/login"}>
+          <button className="ml-[80%] bg-blue-600 py-1 px-2 rounded absolute lg:ml-[84%] mt-[4vh]">
+            Back
+          </button>
+        </Link>
+        <h1 className="text-center text-[1.5rem] font-bold pt-[15vh] lg:pt-[3vh]">
           Sign up
         </h1>
 
@@ -38,35 +43,35 @@ const Signup = () => {
               name="firstname"
               id="firstname"
               placeholder="First name"
-              className="border border-gray-100 bg-transparent placeholder:text-white py-2 px-4 w-full rounded mb-3 md:mb-5 md:w-[60vw] md:ml-[18vw] lg:w-[40vw] lg:ml-[22vw]"
+              className="border border-gray-100 bg-transparent placeholder:text-white py-[0.4rem] px-4 w-full rounded mb-3 md:mb-5 md:w-[60vw] md:ml-[18vw] lg:w-[40vw] lg:ml-[22vw]"
             />
             <input
               type="text"
               name="lastname"
               id="lastname"
               placeholder="Last name"
-              className="border border-gray-100 bg-transparent placeholder:text-white py-2 px-4 w-full rounded mb-3 md:mb-5 md:w-[60vw] md:ml-[18vw] lg:w-[40vw] lg:ml-[22vw]"
+              className="border border-gray-100 bg-transparent placeholder:text-white py-[0.4rem] px-4 w-full rounded mb-3 md:mb-5 md:w-[60vw] md:ml-[18vw] lg:w-[40vw] lg:ml-[22vw]"
             />
             <input
               type="email"
               name="email"
               id="email"
               placeholder="Email address"
-              className="border border-gray-100 bg-transparent placeholder:text-white py-2 px-4 w-full rounded mb-3 md:mb-5 md:w-[60vw] md:ml-[18vw] lg:w-[40vw] lg:ml-[22vw]"
+              className="border border-gray-100 bg-transparent placeholder:text-white py-[0.4rem] px-4 w-full rounded mb-3 md:mb-5 md:w-[60vw] md:ml-[18vw] lg:w-[40vw] lg:ml-[22vw]"
             />
             <input
               type="tel"
               name="number"
               id="number"
               placeholder="Phone number"
-              className="border border-gray-100 bg-transparent placeholder:text-white py-2 px-4 w-full rounded mb-3 md:mb-5 md:w-[60vw] md:ml-[18vw] lg:w-[40vw] lg:ml-[22vw]"
+              className="border border-gray-100 bg-transparent placeholder:text-white py-[0.4rem] px-4 w-full rounded mb-3 md:mb-5 md:w-[60vw] md:ml-[18vw] lg:w-[40vw] lg:ml-[22vw]"
             />
             <input
               type="password"
               name="password"
               id="password"
               placeholder="Password"
-              className="border border-gray-100 bg-transparent placeholder:text-white py-2 px-4 w-full rounded mb-3 md:mb-5 md:w-[60vw] md:ml-[18vw] lg:w-[40vw] lg:ml-[22vw]"
+              className="border border-gray-100 bg-transparent placeholder:text-white py-[0.4rem] px-4 w-full rounded mb-3 md:mb-5 md:w-[60vw] md:ml-[18vw] lg:w-[40vw] lg:ml-[22vw]"
             />
             <div className="flex gap-4 mb-3 md:ml-[18vw] lg:w-[40vw] lg:ml-[22vw]">
               <label htmlFor="role">Gender</label>
@@ -98,14 +103,14 @@ const Signup = () => {
             <p className="mt-2 flex gap-2 md:w-[60vw] md:ml-[18vw] lg:w-[40vw] lg:ml-[22vw]">
               Already have an account?{" "}
               <Link
-                className="font-semibold text-[#FC2469] bg-black bg-opacity-60 px-1 py-[0.1rem]"
+                className="font-semibold text-blue-600 bg-black bg-opacity-60 px-1 py-[0.1rem]"
                 to="/login"
               >
                 Log in
               </Link>
             </p>
             <button
-              className="w-full py-2 mt-5 bg-[#FC2469] text-white font-semibold transition rounded hover:bg-[#cc255a] md:w-[60vw] md:ml-[18vw] lg:w-[40vw] lg:ml-[22vw]"
+              className="w-full py-2 mt-5 bg-blue-600 text-white font-semibold transition rounded hover:bg-blue-800 md:w-[60vw] md:ml-[18vw] lg:w-[40vw] lg:ml-[22vw]"
               type="submit"
             >
               Submit
