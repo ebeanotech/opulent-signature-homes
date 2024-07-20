@@ -36,7 +36,7 @@ const Navbar = () => {
         <h1 className="text-[1.7rem] text-black max-[900px]:hidden font-bold">
           Opulent Signature Homes
         </h1>
-        <Link to={"/"}>
+        <Link to={"/home"}>
           <img
             src={logo1}
             alt=""
@@ -58,7 +58,7 @@ const Navbar = () => {
       {/* Navbar links */}
       <ul className="hidden max-[900px]:h-[98vh] bg-white text-black max-[900px]:z-20 max-[900px]:p-[1rem] ml-[-0.25rem] lg:ml-[35%] max-[900px]:w-[98vw] lg:bg-transparent mt-[4.5rem] lg:mt-[0rem] fixed navbar lg:flex gap-[3rem] pt-[0.5rem] max-[900px]:absolute">
         <span className="lg:flex gap-[3rem] bg-white lg:py-2 lg:px-6 lg:mt-[-0.6rem] lg:mr-[-1rem] lg:rounded-lg">
-          <Link to={"/"}>
+          <Link to={"/home"}>
             <li className="lg:text-black text-black max-[900px]:mb-[0.6rem] max-[900px]:pt-2 max-[900px]:pb-3 border-b border-gray-700 lg:border-none">
               <a
                 className="no-underline hover:text-blue-600 lg:text-black text-black lg:hover:text-blue-600"

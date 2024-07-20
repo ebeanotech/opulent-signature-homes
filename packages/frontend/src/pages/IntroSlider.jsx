@@ -49,7 +49,7 @@ const IntroSlider = () => {
           modules={[Pagination]}
         >
           <SwiperSlide className="relative">
-            <div className="absolute z-20 ml-[-4.4vw] md:ml-[-1vw] md:pt-[1vw] flex">
+            <div className="absolute z-20 ml-[-4.4vw] md:ml-[0.5vw] md:pt-[1vw] flex">
               <img src={opulent} className="w-[6rem] md:w-[8rem]" alt="" />
               <h1 className="text-white pt-6 md:pt-8 font-bold text-[1.2rem] md:text-[1.7rem] max-[360px]:ml-[1.8vw] ml-[2vw] md:ml-[16vw] lg:ml-[28vw] border-b border-blue-600 h-[3.6rem] md:h-[4.8rem]">
                 Opulent Signature Homes
@@ -81,7 +81,7 @@ const IntroSlider = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="relative">
-            <div className="absolute z-20 ml-[-4.4vw] md:ml-[-1vw] md:pt-[1vw] flex">
+            <div className="absolute z-20 ml-[-4.4vw] md:ml-[0.5vw] md:pt-[1vw] flex">
               <img src={opulent} className="w-[6rem] md:w-[8rem]" alt="" />
               <h1 className="text-white pt-6 md:pt-8 font-bold text-[1.2rem] md:text-[1.7rem] max-[360px]:ml-[1.8vw] ml-[2vw] md:ml-[16vw] lg:ml-[28vw] border-b border-blue-600 h-[3.6rem] md:h-[4.8rem]">
                 Opulent Signature Homes
@@ -114,7 +114,7 @@ const IntroSlider = () => {
             </div>
           </SwiperSlide>
           <SwiperSlide className="relative">
-            <div className="absolute z-20 ml-[-4.4vw] md:ml-[-1vw] md:pt-[1vw] flex">
+            <div className="absolute z-20 ml-[-4.4vw] md:ml-[0.5vw] md:pt-[1vw] flex">
               <img src={opulent} className="w-[6rem] md:w-[8rem]" alt="" />
               <h1 className="text-white pt-6 md:pt-8 font-bold text-[1.2rem] md:text-[1.7rem] max-[360px]:ml-[1.8vw] ml-[2vw] md:ml-[16vw] lg:ml-[28vw] border-b border-blue-600 h-[3.6rem] md:h-[4.8rem]">
                 Opulent Signature Homes

@@ -35,24 +35,60 @@ const PropertyRow = () => {
       </span>
 
       {/* Grid layout for featured properties */}
-      <div className="grid grid-cols-1 cursor-pointer md:grid-cols-3 gap-5 w-full mx-auto text-center">
+      <div className="grid grid-cols-1 cursor-pointer md:grid-cols-3 gap-5 w-[90%] mx-auto text-center">
         {/* Featured Property 1 */}
-        <PropertyColumn img={duplex1} />
+        <PropertyColumn
+          img={duplex1}
+          name={"duplex 1"}
+          price={"230,000,000"}
+          location={"Lagos"}
+          condition={"sale"}
+        />
 
         {/* Featured Property 2 */}
-        <PropertyColumn img={bungalo1} />
+        <PropertyColumn
+          img={bungalo1}
+          name={"duplex 1"}
+          price={"50,000,000"}
+          location={"Lagos"}
+          condition={"rent"}
+        />
 
         {/* Featured Property 3 */}
-        <PropertyColumn img={duplex3} />
+        <PropertyColumn
+          img={duplex3}
+          name={"duplex 1"}
+          price={"80,000,000"}
+          location={"Lagos"}
+          condition={"sale"}
+        />
 
         {/* Featured Property 4 */}
-        <PropertyColumn img={duplex2} />
+        <PropertyColumn
+          img={duplex2}
+          name={"duplex 1"}
+          price={"300,000,000"}
+          location={"Lagos"}
+          condition={"rent"}
+        />
 
         {/* Featured Property 5 */}
-        <PropertyColumn img={bungalo2} />
+        <PropertyColumn
+          img={bungalo2}
+          name={"duplex 1"}
+          price={"35,000,000"}
+          location={"Lagos"}
+          condition={"sale"}
+        />
 
         {/* Featured Property 6 */}
-        <PropertyColumn img={duplex4} />
+        <PropertyColumn
+          img={duplex4}
+          name={"duplex 1"}
+          price={"95,000,000"}
+          location={"Lagos"}
+          condition={"rent"}
+        />
       </div>
     </motion.div>
   );

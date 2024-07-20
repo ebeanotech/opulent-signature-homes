@@ -3,7 +3,7 @@ import { FaLocationDot, FaNairaSign } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 
-const PropertyColumn = ({ img }) => {
+const PropertyColumn = ({ name, location, img, condition, price }) => {
   return (
     <motion.div
       initial={{
@@ -27,16 +27,16 @@ const PropertyColumn = ({ img }) => {
         />
       </div>
       <div className="flex justify-between mt-3 px-3">
-        <h3>6 Bedroom duplex</h3>
-        <p className="text-blue-600 text-xs font-semibold">For Sale</p>
+        <h3>{name}</h3>
+        <p className="text-blue-600 text-xs font-semibold">For {condition}</p>
       </div>
       <h3 className="flex gap-1 ml-2 mt-1 text-gray-500 text-sm items-center">
-        <FaLocationDot /> 21 Steven Strange Str Lagos
+        <FaLocationDot /> {location}
       </h3>
       <div className="flex justify-between mt-3 px-3 items-center">
         <div className="text-yellow-500 text-sm">
           <Link to={"/property-info"}>
-            <button className="bg-blue-600 text-white py-2 px-3 text-[0.8rem] rounded-lg">
+            <button className="bg-blue-600 hover:bg-blue-800 text-white py-2 px-3 text-[0.8rem] rounded-lg">
               More Info
             </button>
           </Link>
@@ -44,7 +44,7 @@ const PropertyColumn = ({ img }) => {
 
         <div>
           <h3 className="flex gap-1 items-center text-sm">
-            <FaNairaSign /> 120,000,000
+            <FaNairaSign /> {price}
           </h3>
         </div>
       </div>

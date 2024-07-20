@@ -9,6 +9,8 @@ import LiveWithUs from "../components/LiveWithUs";
 import TakeAction from "../components/TakeAction";
 import Footer from "../components/Footer";
 import Faq from "../components/Faq";
+import AdvertSlider from "../components/AdvertSlider";
+import BottomNavbar from "../components/BottomNavbar";
 
 const Home = () => {
   return (
@@ -21,8 +23,10 @@ const Home = () => {
       <WhatWeOffer />
       <LiveWithUs />
       <Faq />
+      <AdvertSlider />
       <TakeAction />
       <Footer />
+      <BottomNavbar current={"home"} />
     </div>
   );
 };

@@ -44,3 +44,53 @@
 .hidden {
   display: none;
 }
+
+/* Custom CSS for Confetti Effect */
+.confetti-piece {
+  opacity: 0;
+  animation: fall 3s linear infinite;
+}
+
+.left-confetti {
+  animation: left-fall 3s linear infinite;
+}
+
+.right-confetti {
+  animation: right-fall 3s linear infinite;
+}
+
+@keyframes left-fall {
+  0% {
+    left: -10vw;
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  50% {
+    left: 50vw;
+    opacity: 1;
+  }
+  100% {
+    left: 80vw;
+    top: 110vh;
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes right-fall {
+  0% {
+    left: 100vw;
+    opacity: 1;
+    transform: rotate(0deg);
+  }
+  50% {
+    left: 50vw;
+    opacity: 1;
+  }
+  100% {
+    left: 80vw;
+    top: 110vh;
+    opacity: 0;
+    transform: rotate(360deg);
+  }
+}
